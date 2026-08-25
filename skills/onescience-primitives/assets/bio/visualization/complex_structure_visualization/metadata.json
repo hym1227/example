@@ -1,0 +1,31 @@
+{
+  "name": "complex_structure_visualization",
+  "type": "visualization",
+  "domain": "bio",
+  "version": "1.4.0",
+  "visibility": "public",
+  "created_at": "2026-07-27",
+  "updated_at": "2026-07-28",
+  "description": "统一的蛋白质单体与生物大分子复合物置信度可视化原语。固定并离线内联 3Dmol.js 2.5.4，兼容 AF3 label-only CIF 的二级结构推断，生成 RCSB-like 蛋白 ribbon/cartoon、核酸骨架带与环片、序列 hover、Dynamic bonds、真实 pLDDT/PAE、自定义视图和多样本切换，并对短肽及不完整核苷酸给出可渲染性诊断。",
+  "tags": [
+    "protein-structure",
+    "protein-monomer",
+    "macromolecular-complex",
+    "protein-dna",
+    "protein-rna",
+    "protein-ligand",
+    "mmcif",
+    "pdb",
+    "plddt",
+    "pae",
+    "alphafold3",
+    "multi-sample",
+    "confidence-json",
+    "pymol-style",
+    "3dmol",
+    "interactive-3d",
+    "sequence-linkage",
+    "dynamic-bonds",
+    "rcsb-style"
+  ]
+}

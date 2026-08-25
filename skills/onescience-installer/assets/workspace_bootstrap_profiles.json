@@ -1,0 +1,24 @@
+[
+  {
+    "id": "onescience_wheel_bootstrap",
+    "lifecycle_status": "stable",
+    "workspace_kind": "wheel_install",
+    "supported_installer_backends": [
+      "dcu_remote_install",
+      "dcu_local_install",
+      "gpu_remote_install",
+      "gpu_local_install"
+    ],
+    "wheel": {
+      "wheel_dir": "~/onescience_wheels",
+      "wheel_glob": "onescience*.whl",
+      "download_wheel_command": "pip download --no-deps onescience -d {wheel_dir} -i http://mirrors.onescience.ai:3141/pypi/simple/ --trusted-host mirrors.onescience.ai",
+      "metadata_probe_command": "cd {wheel_dir} && unzip -p ./{wheel_glob} '*/METADATA' | sed -n 's/^Provides-Extra: //p'",
+      "install_command_template": "pip install \"onescience[{resolved_extra}]\" -i http://mirrors.onescience.ai:3141/pypi/simple/ --trusted-host mirrors.onescience.ai"
+    },
+    "notes": [
+      "当前稳定工作区引导 profile",
+      "负责 OneScience wheel 发现、extras 探测与基于 extra 的 onescience 安装入口，不属于硬件环境安装语义"
+    ]
+  }
+]
